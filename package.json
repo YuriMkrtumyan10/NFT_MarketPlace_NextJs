@@ -6,15 +6,29 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "moralis:sync": "moralis-admin-cli connect-local-devchain --chain hardhat --moralisSubdomain 1udupmwvoamz.grandmoralis.com --frpcPath ./frp/frpc.exe",
+    "moralis:cloud": "moralis-admin-cli watch-cloud-folder --moralisApiKey GciapjGxnwPuyDF --moralisApiSecret 6dL9TQQtcaU3wzi --moralisSubdomain 1udupmwvoamz.grandmoralis.com --autoSave 1 --moralisCloudfolder ./cloudFunctions"
   },
   "dependencies": {
+    "@web3auth/web3auth": "^2.1.3",
+    "global": "^4.4.0",
+    "magic-sdk": "7.0.0",
+    "moralis-admin-cli": "^2.1.16",
+    "moralis-v1": "^1.11.0",
     "next": "12.3.1",
+    "node": "16.14.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-moralis": "^1.4.2",
+    "web3uikit": "^1.0.4"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "dotenv": "^16.0.3",
     "eslint": "8.25.0",
-    "eslint-config-next": "12.3.1"
+    "eslint-config-next": "12.3.1",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8"
   }
 }
